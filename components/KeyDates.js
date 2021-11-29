@@ -6,7 +6,7 @@ import styles from "./KeyDates.module.css";
 const GuidelinesSection = () => {
   const dates = [
     { date: "Nov 29", desc: "Registrations open" },
-    { date: "Dec 3", desc: "Hacking begins" },
+    { date: "Dec 3", desc: "Registrations close & Hacking begins!" },
     { date: "Dec 13", desc: "Submissions close" },
     { date: "Dec 16", desc: "Validation / security testing begins" },
     { date: "Dec 17", desc: "Projects are deployed to Mainnet" },
