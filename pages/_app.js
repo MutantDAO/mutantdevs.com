@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Mutant Cats: Fish-a-thon</title>
+        <title>Mutant World Fish Hackathon</title>
         <meta name="description" content={meta.description} />
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
