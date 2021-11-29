@@ -27,10 +27,18 @@ const SplashContent = () => {
             <p>
               Join us for our inaugural <b>HACKATHON</b>!
             </p>
+            {/*<p>*/}
+            {/*  Contribute to the expanding Mutant Verse by hacking on our token*/}
+            {/*  protocol and invest new and exciting ways to use your $FISH token*/}
+            {/*  and win up to <b>25 ETH is prizes</b>!*/}
+            {/*</p>*/}
             <p>
-              Contribute to the expanding Mutant Verse by hacking on our token
-              protocol and invest new and exciting ways to use your $FISH token
-              and win up to <b>25 ETH is prizes</b>!
+              Assemble your team.
+              Develop your idea to increase utility and effectiveness of fish token.
+              Submit your proposal to the DAO.
+            </p>
+            <p>
+              <b>WIN UP TO 25 ETH IN PRIZES FOR THE BEST IDEAS.</b>
             </p>
           </div>
           <div className={styles.splashSection}>
