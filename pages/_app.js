@@ -24,7 +24,11 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content={meta.description} />
         <link rel="icon" href="/Logo_2A_1024x1024.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
           rel="stylesheet"
