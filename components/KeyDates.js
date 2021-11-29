@@ -8,9 +8,10 @@ const GuidelinesSection = () => {
     { date: "Nov 29", desc: "Registrations open" },
     { date: "Dec 3", desc: "Registrations close & Hacking begins!" },
     { date: "Dec 13", desc: "Submissions close" },
-    { date: "Dec 16", desc: "Validation / security testing begins" },
+    { date: "Dec 15", desc: "Validation / security testing begins" },
     { date: "Dec 17", desc: "Projects are deployed to Mainnet" },
     { date: "Dec 23", desc: "DAO Votes!" },
+    { date: "Feb 1", desc: "Burner bonus determined." },
   ];
   return (
     <ContentSection>

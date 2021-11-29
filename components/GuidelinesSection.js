@@ -79,6 +79,12 @@ const GuidelinesSection = () => {
             modifications as decided by the DAO.
           </li>
           <li className={styles.guidelineItem}>
+            To qualify for the fish burner bonus your app must recieve FISH from
+            a wide number of wallets having only one or two or a few wallets
+            inject large amounts of $FISH to your app will disqualify you from
+            recieving the burner bonus.
+          </li>
+          <li className={styles.guidelineItem}>
             Contracts should follow solidity best practices.{" "}
             <a
               href={
