@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps }) {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin="true"
+          crossOrigin="true"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
