@@ -111,7 +111,7 @@ gl_FragColor = vec4(mix(vec3(0.0, y / HEIGHT, 0.0), vec3(0, 0, 0), max(0.0, 1.0 
 return;
 }
 
-gl_FragColor = vec4(0.04, 0.01, 0.08, 0.0);
+gl_FragColor = vec4(0.04, 0.01, 0.08, 1.0);
 }
 
 `;
