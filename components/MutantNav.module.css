@@ -1,10 +1,12 @@
-.navBar{
-    background-color: transparent;
+.navBar {
+  background-color: transparent;
+  z-index: 20;
+  box-shadow: #0b031666 0px 8px 24px;
 }
-    .brandContainer{
-        display: flex;
-        align-items: center;
-    }
-        .brandIcon{
-            margin-right: 10px;
-        }
+.brandContainer {
+  display: flex;
+  align-items: center;
+}
+.brandIcon {
+  margin-right: 10px;
+}
