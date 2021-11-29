@@ -11,7 +11,7 @@ const GuidelinesSection = () => {
         <ul>
           <li className={styles.guidelineItem}>
             There are no limits on team size but we would recommend working in
-            smaller teams of 5 or less.
+            smaller teams of 5 or less. Teams of 1 are totally fine.
           </li>
           <li className={styles.guidelineItem}>
             Your project must send $FISH to the MutantDAO wallet.
