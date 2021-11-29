@@ -12,7 +12,17 @@ export default function Home() {
   return (
     <div className={"appContainer"}>
       <MutantNav />
-      <Container style={{ paddingTop: "50px", maxWidth: 900 }}>
+      <Container
+        style={{
+          paddingTop: "50px",
+          maxWidth: 980,
+          position: "relative",
+          zIndex: 10,
+          background: "#0b0316",
+          paddingLeft: 40,
+          paddingRight: 40,
+        }}
+      >
         <SplashContent />
         <ContentSection>
           <ContentTitle>Call out for all $FiSH HacKeRz!</ContentTitle>

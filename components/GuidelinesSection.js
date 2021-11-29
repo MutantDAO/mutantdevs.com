@@ -83,6 +83,10 @@ const GuidelinesSection = () => {
             from a wide number of wallets. Having your app only receive $FISH
             from a handful of wallets will disqualify you from the burner bonus.
           </li>
+          <li>
+            You have done well reading all of this click several times on the
+            background of this page.
+          </li>
           <li className={styles.guidelineItem}>
             Contracts should follow solidity best practices.{" "}
             <a

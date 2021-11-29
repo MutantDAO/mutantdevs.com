@@ -2,6 +2,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 import Head from "next/head";
+import { BackgroundSecret } from "../components/BackgroundSecret";
+
 export default function MyApp({ Component, pageProps }) {
   const domain = "mutantdevs.com";
   const url = `https://${domain}`;
@@ -20,7 +22,7 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <title>Mutant World Fish Hackathon</title>
         <meta name="description" content={meta.description} />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/Logo_2A_1024x1024.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
@@ -41,6 +43,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
+      <BackgroundSecret />
       <Component {...pageProps} />
     </>
   );
