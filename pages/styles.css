@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto Mono", sans-serif;
+  margin: 0px;
+  background-color: #0b0316;
+  color: #ffffff;
+}
+.accent-text {
+  color: #85e309;
+}
+.accent-border-bottom {
+  border-bottom: 1px solid rgba(132, 227, 4, 0.75);
+}
+.appContainer {
+  background-color: #0b0316;
+  color: #ffffff;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .appContainer {
+    padding: 0;
+  }
+}
+
+.footer {
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.footer > * {
+  margin-right: 1rem;
+}
+.footer img {
+  max-width: 20px;
+}

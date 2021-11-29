@@ -1,0 +1,10 @@
+.navBar{
+    background-color: transparent;
+}
+    .brandContainer{
+        display: flex;
+        align-items: center;
+    }
+        .brandIcon{
+            margin-right: 10px;
+        }

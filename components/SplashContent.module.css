@@ -1,0 +1,30 @@
+.splash {
+  padding: 50px 0px 100px;
+}
+.pageTitle {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.splashSection {
+  /*margin: 2rem 0px;*/
+  margin: 0px;
+  flex-direction: column;
+}
+.splashGraphic {
+  display: flex;
+}
+.graphicWrapper {
+  flex-grow: 1;
+}
+.splashActions {
+  margin-top: 30px;
+}
+.launchDate {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .splashSection {
+    flex-direction: row;
+  }
+}
