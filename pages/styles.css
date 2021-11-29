@@ -24,19 +24,25 @@ body {
 
 .mainContainer {
   padding-top: 50px;
-  max-width: 980px;
   position: relative;
   z-index: 10;
   background: #0b0316;
+  max-width: 980px;
 }
 
 @media screen and (min-width: 600px) {
   .mainContainer {
-    position: relative;
-    z-index: 10;
-    background: #0b0316;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 750px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainContainer {
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 980px;
   }
 }
 
