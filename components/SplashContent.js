@@ -1,7 +1,7 @@
 import styles from "./SplashContent.module.css";
 import RegisterBtn from "./RegisterBtn";
 
-const SplashContent = () => {
+const SplashContent = (props) => {
   return (
     <div className={`${styles.splash} accent-border-bottom`}>
       <div className={`${styles.splashSection} ${styles.splashGraphic}`}>
@@ -42,7 +42,7 @@ const SplashContent = () => {
           </div>
           <div className={styles.splashSection}>
             <div className={styles.splashActions}>
-              <RegisterBtn>Register Here</RegisterBtn>
+              <RegisterBtn analytics={props.analytics} origin={"splash"}>Register Here</RegisterBtn>
             </div>
           </div>
         </div>

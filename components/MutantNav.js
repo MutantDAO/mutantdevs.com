@@ -2,7 +2,7 @@ import { Navbar, Container, Col, Row } from "react-bootstrap";
 import RegisterBtn from "./RegisterBtn";
 import styles from "./MutantNav.module.css";
 
-const MutantNav = () => {
+const MutantNav = (props) => {
   // black;
   return (
     <Navbar
@@ -23,7 +23,7 @@ const MutantNav = () => {
         </Navbar.Brand>
         <Row>
           <Col>
-            <RegisterBtn origin={"navbar"}>Register</RegisterBtn>
+            <RegisterBtn analytics={props.analytics} origin={"navbar"}>Register</RegisterBtn>
           </Col>
         </Row>
       </Container>
