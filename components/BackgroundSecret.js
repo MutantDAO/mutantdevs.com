@@ -5,7 +5,7 @@ function setupMatrix() {
   const state = {
     fps: 60,
     color: "#0f0",
-    charset: "0123456789ABCDEF",
+    charset: "MUTANTCATS魚猫ミュータントFISH",
   };
 
   const canvas = document.getElementById("canvas");
