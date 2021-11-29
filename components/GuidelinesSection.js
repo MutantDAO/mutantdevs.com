@@ -34,9 +34,9 @@ const GuidelinesSection = () => {
             Financial mechanisms must be trustless, auditable and on-chain.
           </li>
           <li className={styles.guidelineItem}>
-            Your project must only send FISH to the MutantDAO wallet. You may
-            collect a small fee for doing so up to 5% of the FISH you have sent.
-            This is in order to maintain your project for the long term.
+            Your project must only send $FISH to the MutantDAO wallet. You may
+            collect a small fee for doing so up to 5% of the $FISH you have
+            sent. This is in order to maintain your project for the long term.
           </li>
           <li className={styles.guidelineItem}>
             Teams must be registered by the registration date. Late entries will
@@ -79,9 +79,9 @@ const GuidelinesSection = () => {
             modifications as decided by the DAO.
           </li>
           <li className={styles.guidelineItem}>
-            To qualify for the fish burner bonus your app must recieve FISH from
-            a wide number of wallets. Having your app only receive FISH from a
-            handful of wallets will disqualify you from the burner bonus.
+            To qualify for the $FISH burner bonus your app must recieve $FISH
+            from a wide number of wallets. Having your app only receive $FISH
+            from a handful of wallets will disqualify you from the burner bonus.
           </li>
           <li className={styles.guidelineItem}>
             Contracts should follow solidity best practices.{" "}
