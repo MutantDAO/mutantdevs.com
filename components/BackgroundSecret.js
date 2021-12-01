@@ -1,49 +1,49 @@
 import { useState, useEffect } from "react";
 
-// function setupMatrix() {
-//   if (!window) return;
-//   const state = {
-//     fps: 60,
-//     color: "#0f0",
-//     charset: "MUTANTCATS魚猫ミュータントFISH",
-//   };
+function setupMatrix() {
+  if (!window) return;
+  const state = {
+    fps: 60,
+    color: "#0f0",
+    charset: "MUTANTCATS魚猫ミュータントFISH",
+  };
 
-//   const canvas = document.getElementById("canvas");
-//   const ctx = canvas.getContext("2d");
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
 
-//   let w, h, p;
-//   const resize = () => {
-//     w = canvas.width = innerWidth;
-//     h = canvas.height = innerHeight;
+  let w, h, p;
+  const resize = () => {
+    w = canvas.width = innerWidth;
+    h = canvas.height = innerHeight;
 
-//     p = Array(Math.ceil(w / 10)).fill(0);
-//   };
-//   window.addEventListener("resize", resize);
-//   resize();
+    p = Array(Math.ceil(w / 10)).fill(0);
+  };
+  window.addEventListener("resize", resize);
+  resize();
 
-//   const random = (items) => items[Math.floor(Math.random() * items.length)];
+  const random = (items) => items[Math.floor(Math.random() * items.length)];
 
-//   const draw = () => {
-//     ctx.fillStyle = "rgba(11,3,22,0.05)";
-//     // ctx.fillStyle = "rgba(255,0,0,0.05)";
-//     ctx.fillRect(0, 0, w, h);
-//     ctx.fillStyle = state.color;
+  const draw = () => {
+    ctx.fillStyle = "rgba(11,3,22,0.05)";
+    // ctx.fillStyle = "rgba(255,0,0,0.05)";
+    ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = state.color;
 
-//     for (let i = 0; i < p.length; i++) {
-//       let v = p[i];
-//       ctx.fillText(random(state.charset), i * 10, v);
-//       p[i] = v >= h || v >= 10000 * Math.random() ? 0 : v + 10;
-//     }
-//   };
+    for (let i = 0; i < p.length; i++) {
+      let v = p[i];
+      ctx.fillText(random(state.charset), i * 10, v);
+      p[i] = v >= h || v >= 10000 * Math.random() ? 0 : v + 10;
+    }
+  };
 
-//   let interval = setInterval(draw, 2000 / state.fps);
-//   return () => {
-//     clearInterval(interval);
-//   };
-// }
+  let interval = setInterval(draw, 2000 / state.fps);
+  return () => {
+    clearInterval(interval);
+  };
+}
 
 function betterBackground() {
-  var canvas = document.getElementById("canvas");
+  var canvas = document.getElementById("canvas-slime");
   var width = (canvas.width = window.innerWidth * 0.75);
   var height = (canvas.height = window.innerHeight * 0.75);
   // document.body.appendChild(canvas);
@@ -223,8 +223,11 @@ export const BackgroundSecret = (props) => {
       let clicks = 0;
 
       function handler() {
-        if (clicks > 2) {
-          setActive(true);
+        if (clicks > 2 && clicks <= 7) {
+          setActive("matrix");
+        }
+        if (clicks > 7) {
+          setActive("slime");
           window.document.removeEventListener("click", handler);
         }
 
@@ -237,22 +240,39 @@ export const BackgroundSecret = (props) => {
 
   useEffect(() => {
     if (!active) return;
-    // return setupMatrix();
-    return betterBackground();
+    if (active === "matrix") {
+      return setupMatrix();
+    } else if (active === "slime") {
+      return betterBackground();
+    }
   }, [active]);
 
   return (
     <div>
-      <canvas
-        style={{
-          background: "#0b0316",
-          position: "fixed",
-          width: "100%",
-          height: "100%",
-          zIndex: 0,
-        }}
-        id="canvas"
-      ></canvas>
+      {active == "matrix" && (
+        <canvas
+          style={{
+            background: "#0b0316",
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+          }}
+          id="canvas"
+        ></canvas>
+      )}
+      {active === "slime" && (
+        <canvas
+          style={{
+            background: "#0b0316",
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+          }}
+          id="canvas-slime"
+        ></canvas>
+      )}
     </div>
   );
 };
