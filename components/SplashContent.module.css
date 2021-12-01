@@ -22,7 +22,6 @@
 .launchDate {
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 600px) {
   .splashSection {
     flex-direction: row;

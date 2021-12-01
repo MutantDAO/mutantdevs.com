@@ -1,0 +1,14 @@
+.videoContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.video{
+    border: 1px solid #85e309;
+    border-radius: 4px;
+    height: auto;
+    max-height: 400px;
+    box-sizing: initial;
+    box-shadow: 0px 0px 20px #85e309;
+}

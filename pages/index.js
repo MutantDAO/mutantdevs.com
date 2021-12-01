@@ -7,6 +7,7 @@ import SplashContent from "../components/SplashContent";
 import PrizesSection from "../components/PrizesSection";
 import GuidelinesSection from "../components/GuidelinesSection";
 import KeyDates from "../components/KeyDates";
+import VideoContent from "../components/VideoSection";
 
 export default function Home() {
   return (
@@ -14,8 +15,10 @@ export default function Home() {
       <MutantNav/>
       <Container className={"mainContainer"}>
         <SplashContent/>
+        <VideoContent/>
+        <div className="accent-border-bottom"></div>
         <ContentSection>
-          <ContentTitle>Call out for all $FiSH HacKeRz!</ContentTitle>
+          <ContentTitle>CALLING ALL HACKERZ, DEVS, & DEGENS</ContentTitle>
           <p>
             The MutantDAO has requested we setup a hackathon to expedite the
             number of innovative and creative ways we, as a community, can
