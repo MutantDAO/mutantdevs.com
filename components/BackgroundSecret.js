@@ -226,10 +226,19 @@ export const BackgroundSecret = (props) => {
         if (clicks === 1) {
           setActive("flash");
         }
-        if (clicks > 1 && clicks <= 5) {
+        if (clicks === 2) {
+          setActive(false);
+        }
+        if (clicks === 3) {
+          setActive("yellow");
+        }
+        if (clicks === 4) {
+          setActive(false);
+        }
+        if (clicks > 4 && clicks <= 6) {
           setActive("matrix");
         }
-        if (clicks > 5) {
+        if (clicks > 6) {
           setActive("slime");
           window.document.removeEventListener("click", handler);
         }
@@ -256,6 +265,17 @@ export const BackgroundSecret = (props) => {
         <div
           style={{
             background: "#00FF00",
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            zIndex: 1,
+          }}
+        />
+      )}
+      {active === "yellow" && (
+        <div
+          style={{
+            background: "#FFFF00",
             position: "fixed",
             width: "100%",
             height: "100%",
