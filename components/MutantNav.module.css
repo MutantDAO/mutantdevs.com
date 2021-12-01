@@ -4,6 +4,7 @@
   box-shadow: #0b031666 0px 8px 24px;
 }
 .brandContainer {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
