@@ -17,7 +17,7 @@ export default function resources() {
             <MutantNav analytics={analyticsInstance} />
             <Container className={"mainContainer"}>
                 <ContentSection>
-                    <ContentTitle>Mutantvers token faucets!</ContentTitle>
+                    <ContentTitle>Mutantverse token faucets!</ContentTitle>
                     <p>
                         As part of the development infrastructure to support the wide community
                         of developers in the Mutantverse we make the test $FISH, Mutant Cats
