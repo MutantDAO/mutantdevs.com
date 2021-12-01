@@ -3,6 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 import Head from "next/head";
 import { BackgroundSecret } from "../components/BackgroundSecret";
+import amplitude from "amplitude-js";
+
+if (typeof document !== "undefined") {
+  // Pull this out to a global because we don't care about code quality because we are hackers
+  window.analyticsInstance = amplitude
+    .getInstance()
+    .init("ac8e022d8c510e8e1a2aef1e1fa4d34f");
+}
 
 export default function MyApp({ Component, pageProps }) {
   const domain = "mutantdevs.com";
@@ -46,7 +54,6 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        
       </Head>
       <BackgroundSecret />
       <Component {...pageProps} />
