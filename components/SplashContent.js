@@ -42,7 +42,7 @@ const SplashContent = (props) => {
           </div>
           <div className={styles.splashSection}>
             <div className={styles.splashActions}>
-              <RegisterBtn analytics={props.analytics} origin={"splash"}>Register Here</RegisterBtn>
+              <RegisterBtn origin={"splash"}>Register Here</RegisterBtn>
             </div>
           </div>
         </div>

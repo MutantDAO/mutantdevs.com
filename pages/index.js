@@ -7,21 +7,13 @@ import SplashContent from "../components/SplashContent";
 import PrizesSection from "../components/PrizesSection";
 import GuidelinesSection from "../components/GuidelinesSection";
 import KeyDates from "../components/KeyDates";
-import amplitude from "amplitude-js";
 
 export default function Home() {
-  let analyticsInstance;
-  if (typeof document !== "undefined") {
-    analyticsInstance = amplitude.getInstance().init('ac8e022d8c510e8e1a2aef1e1fa4d34f');
-    amplitude.getInstance().logEvent('app load', { view: "home" });
-  }
-
-
   return (
     <div className={"appContainer"}>
-      <MutantNav analytics={analyticsInstance} />
+      <MutantNav/>
       <Container className={"mainContainer"}>
-        <SplashContent analytics={analyticsInstance} />
+        <SplashContent/>
         <ContentSection>
           <ContentTitle>Call out for all $FiSH HacKeRz!</ContentTitle>
           <p>

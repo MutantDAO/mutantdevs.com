@@ -4,10 +4,17 @@ import "./styles.css";
 import Head from "next/head";
 import { BackgroundSecret } from "../components/BackgroundSecret";
 
-export default function MyApp({ Component, pageProps }) {
+import amplitude from "amplitude-js";
+import {
+  AmplitudeProvider,
+  Amplitude,
+  LogOnMount
+} from "react-amplitude-hooks";
+
+const SharedApp = ({ Component, pageProps }) => {
   const domain = "mutantdevs.com";
   const url = `https://${domain}`;
-
+  
   const meta = {
     image: url + "/Logo_2A_1024x1024.png",
     title: "Join the MutantCats FISH Hackathon",
@@ -17,6 +24,7 @@ export default function MyApp({ Component, pageProps }) {
     url,
     domain,
   };
+  
   return (
     <>
       <Head>
@@ -39,17 +47,36 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="og:type" content={meta.type} />
         <meta property="og:description" content=""></meta>
         <meta property="og:url" content={meta.url}></meta>
-
+      
         <meta name="twitter:card" content={meta.description} />
         <meta property="twitter:domain" content={meta.domain} />
         <meta property="twitter:url" content={meta.url} />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        
+    
       </Head>
       <BackgroundSecret />
       <Component {...pageProps} />
     </>
-  );
+  )
+}
+
+export default function MyApp({ Component, pageProps }) {
+  if(process.browser){
+    return (
+      <AmplitudeProvider amplitudeInstance={amplitude.getInstance()} apiKey={"ac8e022d8c510e8e1a2aef1e1fa4d34f"}>
+        <Amplitude>
+          <LogOnMount eventType={"app-load"}>
+            <SharedApp Component={Component} {...pageProps}/>
+          </LogOnMount>
+        </Amplitude>
+      </AmplitudeProvider>
+    );
+  } else {
+    return (
+      <SharedApp Component={Component} {...pageProps}/>
+    );
+  }
+  
 }
