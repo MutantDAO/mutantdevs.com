@@ -12,8 +12,8 @@ import amplitude from "amplitude-js";
 export default function Home() {
   let analyticsInstance;
   if (typeof document !== "undefined") {
-    //analyticsInstance = amplitude.getInstance().init('ac8e022d8c510e8e1a2aef1e1fa4d34f');
-    //amplitude.getInstance().logEvent('app load', {view: "home"});
+    analyticsInstance = amplitude.getInstance().init('ac8e022d8c510e8e1a2aef1e1fa4d34f');
+    amplitude.getInstance().logEvent('app load', { view: "home" });
   }
 
 
