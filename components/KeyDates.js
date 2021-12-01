@@ -6,11 +6,11 @@ import styles from "./KeyDates.module.css";
 const GuidelinesSection = () => {
   const dates = [
     { date: "Nov 29", desc: "Registrations open" },
-    { date: "Dec 03", desc: "Registrations close & Hacking begins!" },
-    { date: "Dec 13", desc: "Submissions close" },
-    { date: "Dec 15", desc: "Validation / security testing begins" },
-    { date: "Dec 17", desc: "Projects are deployed to Mainnet" },
-    { date: "Dec 23", desc: "DAO Votes!" },
+    { date: "Dec 10", desc: "Registrations close & Hacking begins!" },
+    { date: "Dec 15", desc: "Submissions close" },
+    { date: "Dec 17", desc: "Validation / security testing begins" },
+    { date: "Dec 20", desc: "Projects are deployed to Mainnet" },
+    { date: "Dec 27", desc: "DAO Votes!" },
     { date: "Feb 01", desc: "Burner bonus determined." },
   ];
   return (

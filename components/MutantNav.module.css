@@ -10,3 +10,9 @@
 .brandIcon {
   margin-right: 10px;
 }
+
+.customBtn {
+  background-color: black;
+  border: #fff;
+  color: #85e309;
+}

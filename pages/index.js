@@ -11,12 +11,12 @@ import amplitude from "amplitude-js";
 
 export default function Home() {
   let analyticsInstance;
-  if(typeof document !== "undefined"){
-    analyticsInstance = amplitude.getInstance().init('ac8e022d8c510e8e1a2aef1e1fa4d34f');
-    amplitude.getInstance().logEvent('app load', {view: "home"});
+  if (typeof document !== "undefined") {
+    //analyticsInstance = amplitude.getInstance().init('ac8e022d8c510e8e1a2aef1e1fa4d34f');
+    //amplitude.getInstance().logEvent('app load', {view: "home"});
   }
-  
-  
+
+
   return (
     <div className={"appContainer"}>
       <MutantNav analytics={analyticsInstance} />
@@ -77,7 +77,7 @@ export default function Home() {
               to go live. $FISH token is used by staked gorillas to speed up
               SERUM production.
             </p>
-            <p>Here is where you can find out more about the MutantWord:</p>
+            <p>Here is where you can find out more about the MutantWorld:</p>
             <p>
               <a href="https://mutantworld.com" target="_blank">
                 Website

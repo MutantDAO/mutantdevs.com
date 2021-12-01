@@ -1,6 +1,7 @@
-import { Navbar, Container, Col, Row } from "react-bootstrap";
+import { Navbar, Container, Col, Row, Button } from "react-bootstrap";
 import RegisterBtn from "./RegisterBtn";
 import styles from "./MutantNav.module.css";
+import Link from 'next/link'
 
 const MutantNav = (props) => {
   // black;
@@ -11,7 +12,7 @@ const MutantNav = (props) => {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand href="#home" className={styles.brandContainer}>
+        <Navbar.Brand href="/" className={styles.brandContainer}>
           <img
             alt="Mutant Cats Logo"
             src="/Logo_2A_1024x1024.png"
@@ -21,13 +22,20 @@ const MutantNav = (props) => {
           />
           <span style={{ marginLeft: "0px" }}>Mutant Devs</span>
         </Navbar.Brand>
+        <Col>
+          <Link href="/resources" passHref>
+            <Button variant="dark" className={styles.customBtn} >Resources</Button>
+          </Link>
+        </Col>
+
+
         <Row>
           <Col>
             <RegisterBtn analytics={props.analytics} origin={"navbar"}>Register</RegisterBtn>
           </Col>
         </Row>
-      </Container>
-    </Navbar>
+      </Container >
+    </Navbar >
   );
 };
 
