@@ -223,7 +223,7 @@ export const BackgroundSecret = (props) => {
       let clicks = 0;
 
       function handler() {
-        if (clicks > 5) {
+        if (clicks > 2) {
           setActive(true);
           window.document.removeEventListener("click", handler);
         }
