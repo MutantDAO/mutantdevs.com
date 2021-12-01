@@ -15,7 +15,7 @@ const GuidelinesSection = () => {
   ];
   return (
     <ContentSection>
-      <ContentTitle>Key Dates</ContentTitle>
+      <ContentTitle>Timeline</ContentTitle>
       <ContentBody>
         <table className={styles.table}>
           <thead>
