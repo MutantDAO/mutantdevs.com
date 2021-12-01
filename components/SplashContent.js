@@ -7,6 +7,7 @@ const SplashContent = (props) => {
       <div className={`${styles.splashSection} ${styles.splashGraphic}`}>
         <div className={styles.graphicWrapper}>
           <img
+            style={{ userSelect: "none" }}
             src={"/favicon.png"}
             alt={"Mutant Cats Logo"}
             height={310}
@@ -42,7 +43,9 @@ const SplashContent = (props) => {
           </div>
           <div className={styles.splashSection}>
             <div className={styles.splashActions}>
-              <RegisterBtn analytics={props.analytics} origin={"splash"}>Register Here</RegisterBtn>
+              <RegisterBtn analytics={props.analytics} origin={"splash"}>
+                Register Here
+              </RegisterBtn>
             </div>
           </div>
         </div>
