@@ -5,7 +5,7 @@ import ContentTitle from "../components/ContentTitle";
 import styles from "../components/KeyDates.module.css";
 import { useEffect } from "react";
 import amplitude from "amplitude-js";
-
+const win = typeof window !== "undefined" ? window : null;
 export default function resources() {
   useEffect(() => {
     amplitude.getInstance().logEvent("Resources page", { view: "resources" });
@@ -13,7 +13,7 @@ export default function resources() {
 
   return (
     <div className={"appContainer"}>
-      <MutantNav analytics={window.analyticsInstance} />
+      <MutantNav analytics={win?.analyticsInstance} />
       <Container className={"mainContainer"}>
         <ContentSection>
           <ContentTitle>Mutantverse token faucets!</ContentTitle>

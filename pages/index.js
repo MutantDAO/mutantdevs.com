@@ -9,6 +9,7 @@ import GuidelinesSection from "../components/GuidelinesSection";
 import KeyDates from "../components/KeyDates";
 import amplitude from "amplitude-js";
 import { useEffect } from "react";
+const win = typeof window !== "undefined" ? window : null;
 
 export default function Home() {
   useEffect(() => {
@@ -17,9 +18,9 @@ export default function Home() {
 
   return (
     <div className={"appContainer"}>
-      <MutantNav analytics={window.analyticsInstance} />
+      <MutantNav analytics={win?.analyticsInstance} />
       <Container className={"mainContainer"}>
-        <SplashContent analytics={window.analyticsInstance} />
+        <SplashContent analytics={win?.analyticsInstance} />
         <ContentSection>
           <ContentTitle>Call out for all $FiSH HacKeRz!</ContentTitle>
           <p>
