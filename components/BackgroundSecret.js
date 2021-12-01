@@ -223,10 +223,13 @@ export const BackgroundSecret = (props) => {
       let clicks = 0;
 
       function handler() {
-        if (clicks > 2 && clicks <= 7) {
+        if (clicks === 1) {
+          setActive("flash");
+        }
+        if (clicks > 1 && clicks <= 5) {
           setActive("matrix");
         }
-        if (clicks > 7) {
+        if (clicks > 5) {
           setActive("slime");
           window.document.removeEventListener("click", handler);
         }
@@ -249,6 +252,17 @@ export const BackgroundSecret = (props) => {
 
   return (
     <div>
+      {active === "flash" && (
+        <div
+          style={{
+            background: "#00FF00",
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            zIndex: 1,
+          }}
+        />
+      )}
       {active == "matrix" && (
         <canvas
           style={{
