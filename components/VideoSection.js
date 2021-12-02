@@ -4,7 +4,7 @@ import ContentTitle from "./ContentTitle";
 
 const VideoContent = () => {
   return (
-    <div style={{ background: "black" }}>
+    <div style={{ background: "black", maxHeight: 500 }}>
       <video
         className={styles.video}
         src={"fish_hackathon_details_v5.mp4"}
