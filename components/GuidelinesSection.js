@@ -17,10 +17,10 @@ const GuidelinesSection = () => {
           <li>A development team ready to execute on that idea</li>
           <li>At least one Github account</li>
           <li>At least one discord user account</li>
-          <li>A white paper</li>
+          <li>A one page draft white paper</li>
         </ul>
         <p>
-          A rough one page white paper outlining:
+          The white paper should include:
           <ul>
             <ol>
               <li> What your project is</li>
