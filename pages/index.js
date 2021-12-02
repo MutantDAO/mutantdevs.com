@@ -12,10 +12,10 @@ import VideoContent from "../components/VideoSection";
 export default function Home() {
   return (
     <div className={"appContainer"}>
-      <MutantNav/>
+      <MutantNav />
       <Container className={"mainContainer"}>
-        <SplashContent/>
-        <VideoContent/>
+        <VideoContent />
+        <SplashContent />
         <div className="accent-border-bottom"></div>
         <ContentSection>
           <ContentTitle>CALLING ALL HACKERZ, DEVS, & DEGENS</ContentTitle>
