@@ -7,6 +7,67 @@ import RegisterBtn from "./RegisterBtn";
 const GuidelinesSection = () => {
   return (
     <ContentSection>
+      <ContentTitle>Your Project</ContentTitle>
+      <ContentBody>
+        <ul>
+          <li>Your project must contribute value to the Mutant Community.</li>
+          <li>Your project must send $FISH to the MutantDAO wallet.</li>
+          <li>
+            You may collect a small fee of up to 5% of the $FISH you have sent
+            to the MutantDAO wallet. This is in order to maintain your project
+            for the long term.
+          </li>
+          <li>
+            Financial mechanisms must be trustless, auditable and on-chain.
+          </li>
+          <li>
+            Your project must be accessible by the mutant community and cannot
+            be behind a paywall.... unless your paywall is in $FISH! ;-)
+          </li>
+          <li>
+            To qualify for the $FISH burner bonus your app must recieve $FISH
+            from a wide number of wallets. Having your app only receive $FISH
+            from a handful of wallets will disqualify you from the burner bonus.
+          </li>
+        </ul>
+      </ContentBody>
+
+      <ContentTitle>Your Team</ContentTitle>
+      <ContentBody>
+        <ul>
+          <li>
+            There are no limits on team size but we would recommend working in
+            smaller teams of 5 or less. Teams of 1 are totally fine.
+          </li>
+          <li>
+            Teams must be registered by the registration date. Late entries will
+            not be accepted.
+          </li>
+          <li>
+            Teams can have members from outside the MutantCat community although
+            you will need at least one verified member on our discord for
+            communication purposes.
+          </li>
+          <li>
+            Teams are welcome to share, gain advice or support from organizers,
+            volunteers, sponsors, and others.
+          </li>
+          <li>
+            Teams are welcome to use an idea they have had prior to the event
+            although they must be prepared to submit their project under the
+            submission guidelines.
+          </li>
+          <li>
+            Teams can be disqualified from the competition at the organizers'
+            discretion. Reasons might include but are not limited to breaking
+            competition rules, poor conduct or other bad behaviour. This is an
+            open supportive group. Sportsmanship, dignity and suportiveness are
+            all important. We are here primarily to make the mutant community
+            thrive. We are all on the one team.
+          </li>
+        </ul>
+      </ContentBody>
+
       <ContentTitle>Registration</ContentTitle>
       <ContentBody>
         <p>
@@ -87,62 +148,18 @@ const GuidelinesSection = () => {
             Running <code>ipfs add -Qr --only-hash ./build</code> must yield the
             same CID as the ipfs CID provided
           </li>
-        </ul>
-      </ContentBody>
-      <ContentTitle>Guidelines</ContentTitle>
-      <ContentBody>
-        <ul>
           <li>
-            There are no limits on team size but we would recommend working in
-            smaller teams of 5 or less. Teams of 1 are totally fine.
-          </li>
-          <li>Your project must send $FISH to the MutantDAO wallet.</li>
-          <li>
-            Your project must be delivered under an open source license, this is
-            vital for the security of our community and it allows others in the
-            community to build on top of what you have done. Remember
+            Your project must be delivered under an MIT license. Naturally
             integrations with closed source documented third party APIs are
             totally acceptible eg. Opensea API. Github Oauth
           </li>
-          <li>Your project must contribute value to the Mutant Community.</li>
-          <li>
-            Your project must be accessible by the mutant community and cannot
-            be behind a paywall.... unless your paywall is in $FISH! ;-)
-          </li>
-          <li>
-            Financial mechanisms must be trustless, auditable and on-chain.
-          </li>
-          <li>
-            Your project must only send $FISH to the MutantDAO wallet. You may
-            collect a small fee for doing so up to 5% of the $FISH you have
-            sent. This is in order to maintain your project for the long term.
-          </li>
-          <li>
-            Teams must be registered by the registration date. Late entries will
-            not be accepted.
-          </li>
-          <li>
-            Teams can have members from outside the MutantCat community although
-            you will need at least one verified member on our discord for
-            communication purposes.
-          </li>
-          <li>
-            Teams are welcome to share, gain advice or support from organizers,
-            volunteers, sponsors, and others.
-          </li>
-          <li>
-            Teams are welcome to use an idea they have had prior to the event
-            although they must be prepared to submit their project under the
-            submission guidelines.
-          </li>
-          <li>
-            Teams can be disqualified from the competition at the organizers'
-            discretion. Reasons might include but are not limited to breaking
-            competition rules, poor conduct or other bad behaviour. This is an
-            open supportive group. Sportsmanship, dignity and suportiveness are
-            all important. We are here primarily to make the mutant community
-            thrive. We are all on the one team.
-          </li>
+        </ul>
+      </ContentBody>
+
+      <ContentTitle>Security</ContentTitle>
+      <ContentBody>
+        <ul>
+          <li>All entries will be audited for security issues.</li>
           <li>
             Projects found to have any malicious code will be immediately
             disqualified.
@@ -152,31 +169,19 @@ const GuidelinesSection = () => {
             case basis.
           </li>
           <li>
-            Projects that are submitted to the DAO will form part of the DAO’s
-            code base and be available under an MIT license. This grants the DAO
-            unlimited use of the code and/or services made available and allows
-            modifications as decided by the DAO.
-          </li>
-          <li>
-            To qualify for the $FISH burner bonus your app must recieve $FISH
-            from a wide number of wallets. Having your app only receive $FISH
-            from a handful of wallets will disqualify you from the burner bonus.
-          </li>
-
-          <li>
-            Contracts should follow solidity best practices.{" "}
+            Contracts should follow{" "}
             <a
               href={
                 "https://consensys.github.io/smart-contract-best-practices/software_engineering"
               }
               target={"_blank"}
             >
-              reference
+              solidity best practices.
             </a>
           </li>
           <li>
             You have done well reading all of this can't wait to see what you
-            come up with click several times on the background of this page.
+            come up with!
           </li>
         </ul>
       </ContentBody>
