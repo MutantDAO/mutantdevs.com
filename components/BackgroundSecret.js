@@ -216,39 +216,39 @@ gl_FragColor = vec4(0.04, 0.01, 0.08, 1.0);
 }
 
 export const BackgroundSecret = (props) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState("slime");
 
-  useEffect(() => {
-    if (window) {
-      let clicks = 0;
+  // useEffect(() => {
+  //   if (window) {
+  //     let clicks = 0;
 
-      function handler() {
-        if (clicks === 1) {
-          setActive("flash");
-        }
-        if (clicks === 2) {
-          setActive(false);
-        }
-        if (clicks === 3) {
-          setActive("yellow");
-        }
-        if (clicks === 4) {
-          setActive(false);
-        }
-        if (clicks > 4 && clicks <= 6) {
-          setActive("matrix");
-        }
-        if (clicks > 6) {
-          setActive("slime");
-          window.document.removeEventListener("click", handler);
-        }
+  //     function handler() {
+  //       if (clicks === 1) {
+  //         setActive("flash");
+  //       }
+  //       if (clicks === 2) {
+  //         setActive(false);
+  //       }
+  //       if (clicks === 3) {
+  //         setActive("yellow");
+  //       }
+  //       if (clicks === 4) {
+  //         setActive(false);
+  //       }
+  //       if (clicks > 4 && clicks <= 6) {
+  //         setActive("matrix");
+  //       }
+  //       if (clicks > 6) {
+  //         setActive("slime");
+  //         window.document.removeEventListener("click", handler);
+  //       }
 
-        clicks++;
-      }
+  //       clicks++;
+  //     }
 
-      window.document.addEventListener("click", handler);
-    }
-  }, []);
+  //     window.document.addEventListener("click", handler);
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (!active) return;
