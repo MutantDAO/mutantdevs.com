@@ -13,7 +13,7 @@ const GuidelinesSection = () => {
           In order to register for the hackathon you will need the following:
         </p>
         <ul>
-          <li>A fleshed out thought through idea</li>
+          <li>A fleshed out idea</li>
           <li>A development team ready to execute on that idea</li>
           <li>At least one Github account</li>
           <li>At least one discord user account</li>
