@@ -59,3 +59,12 @@ body {
 .footer img {
   max-width: 20px;
 }
+
+.green_text{
+  background: linear-gradient(0deg,#85e309,#85e309),
+              linear-gradient(180deg,#d8f71b 8.7%,#a0f115 78.26%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #85e309;
+  text-align: center;
+}
