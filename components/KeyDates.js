@@ -16,6 +16,10 @@ const GuidelinesSection = () => {
     <ContentSection>
       <ContentTitle>Timeline</ContentTitle>
       <ContentBody>
+        <p>
+          In the event that we don't have enough entrants by Dec 10 our dates
+          will be postponed until we have 5 approved reigstrations
+        </p>
         <table className={styles.table}>
           <thead>
             <tr>
